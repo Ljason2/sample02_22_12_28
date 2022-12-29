@@ -1,0 +1,67 @@
+@import url('./reset.scss');
+
+
+$color:black;
+$size:10px;
+$size2:37px;
+
+@mixin common{
+    display: flex;
+    position: absolute;
+    @content;
+}
+
+@mixin font{
+    font:{
+        weight:bold;
+        size:13px;
+    }
+}
+
+
+header{
+
+    > div{
+        margin: $size*6 auto;
+        width: 1695px;
+    
+        > h1{
+            float: left;
+            width: $size*5;
+        
+        }
+
+        > div{
+            float: right;
+            position: relative;
+        
+            > ul{
+                right: 0;
+                @include common;
+            > li{
+                margin-right: $size2;
+                > a{
+                    color: $color;
+                    @include font;
+                }
+            }
+            }
+
+            > nav{
+                margin-top: $size*5;
+                > ul{
+                    @include common{
+                        position: static;
+                    }
+                    > li{
+                        margin-right: $size2;
+                        > a{
+                            color: $color;
+                            @include font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+header>div{
+    margin: 60px auto;
+    width: 1695px;
+}
+
+
+header>div>h1{
+    float: left;
+    width: 50px;
+}
+
+
+header>div>div{
+    float: right;
+    position: relative;
+}
+
+header>div>div>ul{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+header>div>div>ul>li{
+    margin-right: 37px;
+}
+
+
+
+header>div>div>ul>li>a{
+color: black;
+font-size: 13px;
+font-weight: bold;
+}
+
+
+header>div>div>nav{
+    margin-top: 50px;
+}
+
+header>div>div>nav>ul{
+    display: flex;
+}
+
+header>div>div>nav>ul>li{
+    margin-right: 37px;
+}
+
+
+header>div>div>nav>ul>li>a{
+color: black;
+font-size: 13px;
+font-weight: bold;
+}
